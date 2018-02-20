@@ -1,7 +1,7 @@
 <?php
 
-namespace Silktide\Reposition\Collection;
-use Silktide\Reposition\Exception\CollectionException;
+namespace Lexide\Reposition\Collection;
+use Lexide\Reposition\Exception\CollectionException;
 
 /**
  * Collection

@@ -1,15 +1,12 @@
 <?php
-/**
- * Silktide Nibbler. Copyright 2013-2014 Silktide Ltd. All Rights Reserved.
- */
-namespace Silktide\Reposition\Storage;
+namespace Lexide\Reposition\Storage;
 
-use Silktide\Reposition\Exception\StorageException;
-use Silktide\Reposition\Hydrator\HydratorInterface;
-use Silktide\Reposition\Normaliser\NormaliserInterface;
-use Silktide\Reposition\Query\Query;
-use Silktide\Reposition\QueryBuilder\QueryBuilder;
-use Silktide\Reposition\QueryInterpreter\MongoQueryInterpreter;
+use Lexide\Reposition\Exception\StorageException;
+use Lexide\Reposition\Hydrator\HydratorInterface;
+use Lexide\Reposition\Normaliser\NormaliserInterface;
+use Lexide\Reposition\Query\Query;
+use Lexide\Reposition\QueryBuilder\QueryBuilder;
+use Lexide\Reposition\QueryInterpreter\MongoQueryInterpreter;
 
 /**
  *

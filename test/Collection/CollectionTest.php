@@ -1,7 +1,7 @@
 <?php
 
-namespace Silktide\Reposition\Test\Collection;
-use Silktide\Reposition\Collection\Collection;
+namespace Lexide\Reposition\Test\Collection;
+use Lexide\Reposition\Collection\Collection;
 
 /**
  * CollectionTest
@@ -99,7 +99,7 @@ class CollectionTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \Silktide\Reposition\Exception\CollectionException
+     * @expectedException \Lexide\Reposition\Exception\CollectionException
      */
     public function testRemoveByUnknownProperty()
     {

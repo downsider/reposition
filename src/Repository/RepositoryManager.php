@@ -1,14 +1,14 @@
 <?php
 
-namespace Silktide\Reposition\Repository;
+namespace Lexide\Reposition\Repository;
 
-use Silktide\Reposition\Exception\RepositoryException;
-use Silktide\Reposition\Exception\MetadataException;
-use Silktide\Reposition\Hydrator\EntityFactoryInterface;
-use Silktide\Reposition\Storage\StorageInterface;
-use Silktide\Reposition\Metadata\EntityMetadataProviderInterface;
-use Silktide\Reposition\Metadata\EntityMetadataFactoryInterface;
-use Silktide\Reposition\QueryBuilder\QueryBuilderInterface;
+use Lexide\Reposition\Exception\RepositoryException;
+use Lexide\Reposition\Exception\MetadataException;
+use Lexide\Reposition\Hydrator\EntityFactoryInterface;
+use Lexide\Reposition\Storage\StorageInterface;
+use Lexide\Reposition\Metadata\EntityMetadataProviderInterface;
+use Lexide\Reposition\Metadata\EntityMetadataFactoryInterface;
+use Lexide\Reposition\QueryBuilder\QueryBuilderInterface;
 
 /**
  *

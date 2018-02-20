@@ -1,16 +1,13 @@
 <?php
-/**
- * Silktide Nibbler. Copyright 2013-2014 Silktide Ltd. All Rights Reserved.
- */
-namespace Silktide\Reposition\QueryInterpreter;
+namespace Lexide\Reposition\QueryInterpreter;
 
-use Silktide\Reposition\Exception\QueryException;
-use Silktide\Reposition\Normaliser\NormaliserInterface;
-use Silktide\Reposition\Query\DeleteQuery;
-use Silktide\Reposition\Query\Query;
-use Silktide\Reposition\Query\FindQuery;
-use Silktide\Reposition\Query\InsertQuery;
-use Silktide\Reposition\Query\UpdateQuery;
+use Lexide\Reposition\Exception\QueryException;
+use Lexide\Reposition\Normaliser\NormaliserInterface;
+use Lexide\Reposition\Query\DeleteQuery;
+use Lexide\Reposition\Query\Query;
+use Lexide\Reposition\Query\FindQuery;
+use Lexide\Reposition\Query\InsertQuery;
+use Lexide\Reposition\Query\UpdateQuery;
 
 /**
  *
@@ -25,7 +22,7 @@ class MongoQueryInterpreter implements QueryInterpreterInterface
 
     /**
      * {@inheritDoc}
-     * @throws \Silktide\Reposition\Exception\QueryException
+     * @throws \Lexide\Reposition\Exception\QueryException
      */
     public function interpret(Query $query)
     {

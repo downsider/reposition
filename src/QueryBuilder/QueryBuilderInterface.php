@@ -1,8 +1,8 @@
 <?php
 
-namespace Silktide\Reposition\QueryBuilder;
+namespace Lexide\Reposition\QueryBuilder;
 
-use Silktide\Reposition\Metadata\EntityMetadata;
+use Lexide\Reposition\Metadata\EntityMetadata;
 
 /**
  *

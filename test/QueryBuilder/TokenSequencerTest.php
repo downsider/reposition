@@ -1,11 +1,11 @@
 <?php
 
-namespace Silktide\Reposition\Tests\QueryBuilder;
+namespace Lexide\Reposition\Tests\QueryBuilder;
 
-use Silktide\Reposition\Metadata\EntityMetadata;
-use Silktide\Reposition\QueryBuilder\TokenSequencer;
-use Silktide\Reposition\QueryBuilder\TokenSequencerInterface;
-use Silktide\Reposition\Exception\MetadataException;
+use Lexide\Reposition\Metadata\EntityMetadata;
+use Lexide\Reposition\QueryBuilder\TokenSequencer;
+use Lexide\Reposition\QueryBuilder\TokenSequencerInterface;
+use Lexide\Reposition\Exception\MetadataException;
 
 class TokenSequencerTest extends \PHPUnit_Framework_TestCase {
 
@@ -13,7 +13,7 @@ class TokenSequencerTest extends \PHPUnit_Framework_TestCase {
 
     public function setUp()
     {
-        $this->tokenFactory = \Mockery::mock("Silktide\\Reposition\\QueryBuilder\\QueryToken\\TokenFactory");
+        $this->tokenFactory = \Mockery::mock("Lexide\\Reposition\\QueryBuilder\\QueryToken\\TokenFactory");
         $this->tokenFactory->shouldReceive("create")->andReturnUsing(function($type, $value = "") {return empty($value)? $type: $value;});
     }
 
@@ -35,7 +35,7 @@ class TokenSequencerTest extends \PHPUnit_Framework_TestCase {
 
     public function sequenceProvider()
     {
-        $sequenceMock = \Mockery::mock("Silktide\\Reposition\\QueryBuilder\\TokenSequencerInterface");
+        $sequenceMock = \Mockery::mock("Lexide\\Reposition\\QueryBuilder\\TokenSequencerInterface");
         $sequenceMock->shouldReceive("getSequence")->andReturn([]);
         return [
             [
@@ -132,7 +132,7 @@ class TokenSequencerTest extends \PHPUnit_Framework_TestCase {
             $parent = isset($include["parent"])? $include["parent"]: "";
             $filters = null;
             if (!empty($include["filters"])) {
-                $filters = \Mockery::mock("Silktide\\Reposition\\QueryBuilder\\TokenSequencerInterface");
+                $filters = \Mockery::mock("Lexide\\Reposition\\QueryBuilder\\TokenSequencerInterface");
                 $filters->shouldReceive("getSequence")->andReturn($include["filters"]);
             }
             $sequencer->includeEntity($includeMetadata, $alias, $parent, $filters);
@@ -143,7 +143,7 @@ class TokenSequencerTest extends \PHPUnit_Framework_TestCase {
     }
 
     protected function createMetadataMock($config) {
-        $metadata = \Mockery::mock("Silktide\\Reposition\\Metadata\\EntityMetadata");
+        $metadata = \Mockery::mock("Lexide\\Reposition\\Metadata\\EntityMetadata");
         $metadata->shouldReceive("getEntity")->andReturn($config["entity"]);
         $metadata->shouldReceive("getCollection")->andReturn($config["entity"]);
         $metadata->shouldReceive("getPrimaryKey")->andReturn("id");
@@ -273,4 +273,3 @@ class TokenSequencerTest extends \PHPUnit_Framework_TestCase {
     }
 
 }
- 

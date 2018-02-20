@@ -1,10 +1,10 @@
 <?php
 
-namespace Silktide\Reposition\QueryInterpreter;
+namespace Lexide\Reposition\QueryInterpreter;
 
-use Silktide\Reposition\Normaliser\NormaliserInterface;
-use Silktide\Reposition\QueryBuilder\TokenSequencerInterface;
-use Silktide\Reposition\Metadata\EntityMetadataProviderInterface;
+use Lexide\Reposition\Normaliser\NormaliserInterface;
+use Lexide\Reposition\QueryBuilder\TokenSequencerInterface;
+use Lexide\Reposition\Metadata\EntityMetadataProviderInterface;
 
 /**
  *

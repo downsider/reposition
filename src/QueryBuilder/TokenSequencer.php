@@ -1,13 +1,13 @@
 <?php
 
-namespace Silktide\Reposition\QueryBuilder;
+namespace Lexide\Reposition\QueryBuilder;
 
-use Silktide\Reposition\Exception\TokenDefinitionException;
-use Silktide\Reposition\QueryBuilder\QueryToken\TokenFactory;
-use Silktide\Reposition\QueryBuilder\QueryToken\Token;
-use Silktide\Reposition\Exception\TokenParseException;
-use Silktide\Reposition\Metadata\EntityMetadata;
-use Silktide\Reposition\QueryBuilder\QueryToken\Value;
+use Lexide\Reposition\Exception\TokenDefinitionException;
+use Lexide\Reposition\QueryBuilder\QueryToken\TokenFactory;
+use Lexide\Reposition\QueryBuilder\QueryToken\Token;
+use Lexide\Reposition\Exception\TokenParseException;
+use Lexide\Reposition\Metadata\EntityMetadata;
+use Lexide\Reposition\QueryBuilder\QueryToken\Value;
 
 class TokenSequencer implements TokenSequencerInterface
 {

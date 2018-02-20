@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Test\Collection;
+namespace Lexide\Reposition\Test\Collection;
 
 /**
  * MockEntity

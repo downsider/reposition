@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\QueryBuilder\QueryToken;
+namespace Lexide\Reposition\QueryBuilder\QueryToken;
 
 class TokenFactory 
 {

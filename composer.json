@@ -1,8 +1,8 @@
 {
-  "name": "silktide/reposition",
+  "name": "lexide/reposition",
   "description": "A modular database abstraction system",
   "license": "MIT",
-  "homepage": "https://github.com/silktide/reposition",
+  "homepage": "https://github.com/lexide/reposition",
   "require": {
     "php": ">=5.5.0"
   },
@@ -12,8 +12,8 @@
   },
   "autoload": {
     "psr-4": {
-      "Silktide\\Reposition\\": "src",
-      "Silktide\\Reposition\\Test\\": "test"
+      "Lexide\\Reposition\\": "src",
+      "Lexide\\Reposition\\Test\\": "test"
     }
   },
   "suggest": {
@@ -21,7 +21,7 @@
   },
   "extra": {
     "downsider-puzzle-di": {
-      "silktide/syringe": {
+      "lexide/syringe": {
         "path": "config/syringe.yml"
       }
     }

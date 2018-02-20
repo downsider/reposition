@@ -1,9 +1,9 @@
 <?php
 
-namespace Silktide\Reposition\QueryBuilder;
+namespace Lexide\Reposition\QueryBuilder;
 
-use Silktide\Reposition\QueryBuilder\QueryToken\Token;
-use Silktide\Reposition\Metadata\EntityMetadata;
+use Lexide\Reposition\QueryBuilder\QueryToken\Token;
+use Lexide\Reposition\Metadata\EntityMetadata;
 
 interface TokenSequencerInterface
 {

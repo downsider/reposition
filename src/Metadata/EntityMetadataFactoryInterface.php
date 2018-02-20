@@ -1,11 +1,11 @@
 <?php
 
-namespace Silktide\Reposition\Metadata;
+namespace Lexide\Reposition\Metadata;
 
 /**
  * Interface for creating new, empty or partially decorated metadata for a given entity
  *
- * @package Silktide\Reposition
+ * @package Lexide\Reposition
  */
 interface EntityMetadataFactoryInterface
 {

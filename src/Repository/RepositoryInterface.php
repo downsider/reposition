@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Repository;
+namespace Lexide\Reposition\Repository;
 
 /**
  *

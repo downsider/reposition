@@ -1,9 +1,9 @@
 <?php
 
-namespace Silktide\Reposition\Tests\QueryBuilder;
+namespace Lexide\Reposition\Tests\QueryBuilder;
 
-use Silktide\Reposition\Metadata\EntityMetadata;
-use Silktide\Reposition\Exception\MetadataException;
+use Lexide\Reposition\Metadata\EntityMetadata;
+use Lexide\Reposition\Exception\MetadataException;
 
 class EntityMetadataTest extends \PHPUnit_Framework_TestCase {
 
@@ -90,7 +90,7 @@ class EntityMetadataTest extends \PHPUnit_Framework_TestCase {
     public function testInvalidRelationshipMetadata(array $metadata, $errorPartial = "")
     {
         $entity = "test";
-        $entityMetadata = new EntityMetadata("\\Silktide\\Reposition\\Metadata\\EntityMetadata");
+        $entityMetadata = new EntityMetadata("\\Lexide\\Reposition\\Metadata\\EntityMetadata");
         try {
             $entityMetadata->addRelationshipMetadata($entity, $metadata);
             $this->fail("Should have thrown an exception when trying to add invalid metadata");
@@ -150,8 +150,8 @@ class EntityMetadataTest extends \PHPUnit_Framework_TestCase {
     {
         $metadata[EntityMetadata::METADATA_RELATIONSHIP_PROPERTY] = "collection";
 
-        $entity = "Silktide\\Reposition\\Metadata\\EntityMetadata";
-        $entityMetadata = new EntityMetadata("Silktide\\Reposition\\Metadata\\EntityMetadata");
+        $entity = "Lexide\\Reposition\\Metadata\\EntityMetadata";
+        $entityMetadata = new EntityMetadata("Lexide\\Reposition\\Metadata\\EntityMetadata");
         $entityMetadata->addRelationshipMetadata($entity, $metadata);
 
         $entities = $entityMetadata->getRelationships();
@@ -264,4 +264,3 @@ class EntityMetadataTest extends \PHPUnit_Framework_TestCase {
     }
 
 }
- 

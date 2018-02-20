@@ -1,11 +1,11 @@
 <?php
 
-namespace Silktide\Reposition\Metadata;
+namespace Lexide\Reposition\Metadata;
 
 /**
  * Interface for providers of complete, decorated metadata for a given entity
 
- * @package Silktide\Reposition
+ * @package Lexide\Reposition
  */
 interface EntityMetadataProviderInterface 
 {

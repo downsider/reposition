@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Normaliser;
+namespace Lexide\Reposition\Normaliser;
 
 /**
  * Interface for translating data to and from a specific database format

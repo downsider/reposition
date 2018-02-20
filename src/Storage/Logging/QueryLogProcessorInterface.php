@@ -1,8 +1,8 @@
 <?php
 
-namespace Silktide\Reposition\Storage\Logging;
+namespace Lexide\Reposition\Storage\Logging;
 
-use Silktide\Reposition\QueryInterpreter\CompiledQuery;
+use Lexide\Reposition\QueryInterpreter\CompiledQuery;
 
 interface QueryLogProcessorInterface 
 {

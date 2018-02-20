@@ -1,11 +1,11 @@
 <?php
 
-namespace Silktide\Reposition\Storage;
+namespace Lexide\Reposition\Storage;
 
-use Silktide\Reposition\QueryBuilder\TokenSequencerInterface;
-use Silktide\Reposition\Metadata\EntityMetadataProviderInterface;
-use Silktide\Reposition\Storage\Logging\QueryLogProcessorInterface;
-use Silktide\Reposition\Storage\Logging\ErrorLogProcessorInterface;
+use Lexide\Reposition\QueryBuilder\TokenSequencerInterface;
+use Lexide\Reposition\Metadata\EntityMetadataProviderInterface;
+use Lexide\Reposition\Storage\Logging\QueryLogProcessorInterface;
+use Lexide\Reposition\Storage\Logging\ErrorLogProcessorInterface;
 
 /**
  *

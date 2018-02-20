@@ -1,8 +1,8 @@
 <?php
 
-namespace Silktide\Reposition\Repository;
+namespace Lexide\Reposition\Repository;
 
-use Silktide\Reposition\Metadata\EntityMetadata;
+use Lexide\Reposition\Metadata\EntityMetadata;
 
 interface MetadataRepositoryInterface 
 {

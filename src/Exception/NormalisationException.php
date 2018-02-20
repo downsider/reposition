@@ -6,7 +6,7 @@
  * Time: 20:27
  */
 
-namespace Silktide\Reposition\Exception;
+namespace Lexide\Reposition\Exception;
 
 
 class NormalisationException extends \Exception

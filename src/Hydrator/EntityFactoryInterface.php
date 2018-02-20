@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Hydrator;
+namespace Lexide\Reposition\Hydrator;
 
 /**
  * EntityFactoryInterface

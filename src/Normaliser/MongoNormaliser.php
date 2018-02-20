@@ -1,11 +1,8 @@
 <?php
-/**
- * Silktide Nibbler. Copyright 2013-2014 Silktide Ltd. All Rights Reserved.
- */
-namespace Silktide\Reposition\Normaliser;
-use Silktide\Reposition\QueryBuilder\MongoQueryBuilder;
-use Silktide\Reposition\QueryBuilder\QueryBuilder;
-use Silktide\Reposition\QueryBuilder\QueryBuilderInterface;
+namespace Lexide\Reposition\Normaliser;
+use Lexide\Reposition\QueryBuilder\MongoQueryBuilder;
+use Lexide\Reposition\QueryBuilder\QueryBuilder;
+use Lexide\Reposition\QueryBuilder\QueryBuilderInterface;
 
 /**
  *

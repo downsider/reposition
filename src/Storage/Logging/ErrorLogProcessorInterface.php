@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Storage\Logging;
+namespace Lexide\Reposition\Storage\Logging;
 
 interface ErrorLogProcessorInterface 
 {

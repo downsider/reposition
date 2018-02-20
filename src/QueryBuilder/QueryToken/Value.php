@@ -1,8 +1,8 @@
 <?php
 
-namespace Silktide\Reposition\QueryBuilder\QueryToken;
+namespace Lexide\Reposition\QueryBuilder\QueryToken;
 
-use Silktide\Reposition\Exception\QueryException;
+use Lexide\Reposition\Exception\QueryException;
 
 class Value extends Token
 {

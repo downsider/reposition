@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Exception;
+namespace Lexide\Reposition\Exception;
 
 class InterpretationException extends \Exception
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Silktide\Reposition\Tests\QueryBuilder;
+namespace Lexide\Reposition\Tests\QueryBuilder;
 
-use Silktide\Reposition\QueryBuilder\QueryBuilder;
-use Silktide\Reposition\QueryBuilder\TokenSequencerInterface;
+use Lexide\Reposition\QueryBuilder\QueryBuilder;
+use Lexide\Reposition\QueryBuilder\TokenSequencerInterface;
 
 class QueryBuilderTest extends \PHPUnit_Framework_TestCase {
 
@@ -11,7 +11,7 @@ class QueryBuilderTest extends \PHPUnit_Framework_TestCase {
 
     public function setUp()
     {
-        $this->tokenFactory = \Mockery::mock("Silktide\\Reposition\\QueryBuilder\\QueryToken\\TokenFactory");
+        $this->tokenFactory = \Mockery::mock("Lexide\\Reposition\\QueryBuilder\\QueryToken\\TokenFactory");
         $this->tokenFactory->shouldReceive("create")->andReturnUsing(function($type) {return $type;});
     }
 
@@ -24,7 +24,7 @@ class QueryBuilderTest extends \PHPUnit_Framework_TestCase {
     public function testQueryStarts($method, $expectedType)
     {
         $entity = "entity";
-        $metadata = \Mockery::mock("Silktide\\Reposition\\Metadata\\EntityMetadata")->shouldReceive("getEntity")->andReturn($entity)->getMock();
+        $metadata = \Mockery::mock("Lexide\\Reposition\\Metadata\\EntityMetadata")->shouldReceive("getEntity")->andReturn($entity)->getMock();
 
         $qb = new QueryBuilder($this->tokenFactory);
         /** @var TokenSequencerInterface $query */
@@ -72,4 +72,3 @@ class QueryBuilderTest extends \PHPUnit_Framework_TestCase {
     }
 
 }
- 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Silktide\Reposition\Metadata;
+namespace Lexide\Reposition\Metadata;
 
-use Silktide\Reposition\Exception\MetadataException;
+use Lexide\Reposition\Exception\MetadataException;
 
 class EntityMetadata
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\QueryInterpreter;
+namespace Lexide\Reposition\QueryInterpreter;
 
 /**
  *

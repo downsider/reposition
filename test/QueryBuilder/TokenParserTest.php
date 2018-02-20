@@ -1,10 +1,10 @@
 <?php
 
-namespace Silktide\Reposition\Tests\QueryBuilder;
+namespace Lexide\Reposition\Tests\QueryBuilder;
 
-use Silktide\Reposition\QueryBuilder\TokenParser;
-use Silktide\Reposition\Exception\TokenDefinitionException;
-use Silktide\Reposition\Exception\TokenParseException;
+use Lexide\Reposition\QueryBuilder\TokenParser;
+use Lexide\Reposition\Exception\TokenDefinitionException;
+use Lexide\Reposition\Exception\TokenParseException;
 
 class TokenParserTest extends \PHPUnit_Framework_TestCase {
 
@@ -137,7 +137,7 @@ class TokenParserTest extends \PHPUnit_Framework_TestCase {
     public function testInvalidSequences(array $definitions, $sequenceType, array $sequence, $errorPartial = "")
     {
 
-        $sequencer = \Mockery::mock("\\Silktide\\Reposition\\QueryBuilder\\TokenSequencerInterface");
+        $sequencer = \Mockery::mock("\\Lexide\\Reposition\\QueryBuilder\\TokenSequencerInterface");
         $sequencer->shouldReceive("getType")->andReturn($sequenceType);
         $sequencer->shouldReceive("getSequence")->andReturn($sequence);
 
@@ -227,7 +227,7 @@ class TokenParserTest extends \PHPUnit_Framework_TestCase {
      */
     public function testValidSequences(array $definitions, array $sequence)
     {
-        $sequencer = \Mockery::mock("\\Silktide\\Reposition\\QueryBuilder\\TokenSequencerInterface");
+        $sequencer = \Mockery::mock("\\Lexide\\Reposition\\QueryBuilder\\TokenSequencerInterface");
         $sequencer->shouldReceive("getType")->andReturn("test");
         $sequencer->shouldReceive("getSequence")->andReturn($sequence);
 
@@ -314,7 +314,7 @@ class TokenParserTest extends \PHPUnit_Framework_TestCase {
             }
         }
 
-        $token = \Mockery::mock("Silktide\\Reposition\\QueryBuilder\\QueryToken\\$tokenClass");
+        $token = \Mockery::mock("Lexide\\Reposition\\QueryBuilder\\QueryToken\\$tokenClass");
         $token->shouldReceive("getType")->andReturn($type);
         if (!empty($value)) {
             if ($tokenClass == "Entity") {
@@ -330,4 +330,3 @@ class TokenParserTest extends \PHPUnit_Framework_TestCase {
     }
 
 }
- 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Silktide\Reposition\Hydrator;
+namespace Lexide\Reposition\Hydrator;
 
-use Silktide\Reposition\Normaliser\NormaliserInterface;
+use Lexide\Reposition\Normaliser\NormaliserInterface;
 
 /**
  *

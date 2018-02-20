@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Collection;
+namespace Lexide\Reposition\Collection;
 
 /**
  * CollectionFactory

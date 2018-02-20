@@ -1,6 +1,6 @@
 <?php
 
-namespace Silktide\Reposition\Metadata;
+namespace Lexide\Reposition\Metadata;
 
 class EntityMetadataFactory implements EntityMetadataFactoryInterface
 {
